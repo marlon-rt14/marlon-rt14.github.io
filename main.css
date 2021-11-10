@@ -21,6 +21,10 @@ span {
 	margin: auto;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 .header {
 	background-image: url('./public/img/fondo.svg');
 	background-repeat: no-repeat;
@@ -214,6 +218,9 @@ article {
 	display: flex;
 	gap: 2.5rem;
 	margin-top: 2rem;
+	max-height: calc(100% - 4.3rem);
+	position: relative;
+	overflow: auto;
 	/* justify-content: space-around; */
 }
 
@@ -236,10 +243,39 @@ article {
 	flex: 1fr;
 	text-align: justify;
 	margin: auto;
+	min-height: 100%;
 }
 
 .about-info-cont-des h4{
 	margin-bottom: .5rem;
+}
+
+.about-info-cont-des p {
+	margin: 1rem 0rem;
+	padding-right: 1rem;
+}
+
+.grid-skills {
+	/* border: 2px solid red; */
+	padding: 1rem;
+	padding-left: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	grid-auto-rows: 150px;
+	gap: 1rem;
+}
+
+.grid-item{
+	padding: 1.5rem;
+	/* border: thin solid #aaa; */
+	background: #fff5;
+	border-radius: 10px;
+}
+
+.grid-skills img {
+	width: 100%;
+	height: 100%;
+	object-fit: scale-down;
 }
 
 

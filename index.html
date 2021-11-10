@@ -33,7 +33,7 @@
     />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <nav class="nav">
         <div class="container-brand">
           <a class="container-brand__a" href="/"
@@ -43,19 +43,19 @@
         </div>
         <ul class="nav__ul">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link" aria-current="page" href="#header">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Acerca de</a>
+            <a class="nav-link" href="#section-about">Acerca de</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Proyectos</a>
+            <a class="nav-link" href="#section-skills">Habilidades</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Habilidades</a>
+            <a class="nav-link" href="#section-projects">Proyectos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link" href="#section-contact">Contacto</a>
           </li>
         </ul>
       </nav>
@@ -70,7 +70,7 @@
         </form>
       </div>
     </header>
-    <section class="section-about">
+    <section class="section-about" id="section-about">
       <div class="waves waves-up"></div>
       <div class="waves waves-down"></div>
       <div class="waves waves-middle"></div>
@@ -83,23 +83,191 @@
           <div class="about-info-cont-des">
             <!-- <h4>Soy Marlon y soy un <span class="key-text"></span></h4> -->
             <p>
-              <strong>Desarrollador backend</strong> y especializándome en el <strong>diseño web</strong> con 3 años de experiencia, siempre he sido un apasionado de la informática desde muy joven. He estado trabajando con tecnologías de desarrollo hace 3 años. <strong>Me gustan los desafíos</strong> y superarme a mí mismo involucrándome en pryectos de mediana y alta complejidad sin miedo a <strong>aprender nuevas tecnologias</strong> y nunca perder la oportunidad de ganar nuevos conocimientos.
+              <strong>Desarrollador backend</strong> y especializándome en el
+              <strong>diseño web</strong> con 3 años de experiencia, siempre he
+              sido un apasionado de la informática desde muy joven. He estado
+              trabajando con tecnologías de desarrollo hace 3 años.
+              <strong>Me gustan los desafíos</strong> y superarme a mí mismo
+              involucrándome en pryectos de mediana y alta complejidad sin miedo
+              a <strong>aprender nuevas tecnologias</strong> y nunca perder la
+              oportunidad de ganar nuevos conocimientos.
             </p>
+
+            <a href="">Descargar CV</a>
           </div>
         </div>
       </article>
     </section>
-    <section class="section-projects">
+
+    <section class="section-skills" id="section-skills">
       <div class="waves waves-up"></div>
       <div class="waves waves-down"></div>
       <div class="waves waves-middle"></div>
-      <article></article>
+      <article class="aritcle-skills">
+        <div class="about-title"><h1>Mis Habilidades</h1></div>
+        <div class="about-info-cont">
+          <div class="about-info-cont-des">
+            <p>
+              Mi experiencia en el maquetado con HTML Y CSS, así como el manejo
+              del DOM con JavaScript es bastante extensa ya que he desarrollado
+              varios proyectos personales. La creación de aplicaciones de
+              escritorio, manejo de Bases de datos, creacion de servicios
+              RESTfull y SOAP, y el manejo de Java Ant, .NET (C#), NodeJS son mi
+              mayor fortaleza. <br /><br><i
+                >He desarrollado proyectos con mas tecnologías de las
+                mencionadas, pero no son tan frecuentes.</i
+              >
+            </p>
+            <div class="grid-skills">
+              <div class="grid-item">
+                <img
+                  src="./public/img/html.svg"
+                  alt="html-logo"
+                  class="grid-img"
+                />
+              </div>
+              <div class="grid-item">
+                <img
+                  src="./public/img/css.svg"
+                  alt="css-logo"
+                  class="grid-img"
+                />
+              </div>
+              <div class="grid-item">
+                <img
+                  src="./public/img/javascript.svg"
+                  alt="javascript-logo"
+                  class="grid-img"
+                />
+              </div>
+              <div class="grid-item">
+                <img
+                  src="./public/img/bootstrap.svg"
+                  alt="bootstrap-logo"
+                  class="grid-img"
+                />
+              </div>
+              <div class="grid-item">
+                <img
+                  src="./public/img/sass.svg"
+                  alt="sass-logo"
+                  class="grid-img"
+                />
+              </div>
+              <div class="grid-item">
+                <img
+                  src="./public/img/react.svg"
+                  alt="react-logo"
+                  class="grid-img"
+                />
+              </div>
+              <div class="grid-item">
+                <img
+                  src="./public/img/java.svg"
+                  alt="java-logo"
+                  class="grid-img"
+                />
+              </div>
+              <div class="grid-item">
+                <img
+                  src="./public/img/net.svg"
+                  alt=".net-logo"
+                  class="grid-img"
+                />
+              </div>
+              <div class="grid-item">
+                <img
+                  src="./public/img/netbeans.png"
+                  alt="netbeans-logo"
+                  class="grid-img"
+                />
+              </div>
+              <div class="grid-item">
+                <img
+                  src="./public/img/vstudio.svg"
+                  alt="vstudio-logo"
+                  class="grid-img"
+                />
+              </div>
+              <div class="grid-item">
+                <img
+                  src="./public/img/vscode.svg"
+                  alt="vscode-logo"
+                  class="grid-img"
+                />
+              </div>
+              <div class="grid-item">
+                <img
+                  src="./public/img/nodejs.svg"
+                  alt="nodejs-logo"
+                  class="grid-img"
+                />
+              </div>
+              <div class="grid-item">
+                <img
+                  src="./public/img/npm.svg"
+                  alt="npm-logo"
+                  class="grid-img"
+                />
+              </div>
+              <div class="grid-item">
+                <img
+                  src="./public/img/mysql.svg"
+                  alt="mysql-logo"
+                  class="grid-img"
+                />
+              </div>
+              <div class="grid-item">
+                <img
+                  src="./public/img/git.svg"
+                  alt="git-logo"
+                  class="grid-img"
+                />
+              </div>
+              <div class="grid-item">
+                <img
+                  src="./public/img/debian.svg"
+                  alt="debian-logo"
+                  class="grid-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
     </section>
-    <section class="section-contact">
+
+    <section class="section-projects" id="section-projects">
       <div class="waves waves-up"></div>
       <div class="waves waves-down"></div>
       <div class="waves waves-middle"></div>
-      <article></article>
+      <article class="aritcle-projects">
+        <div class="about-title"><h1>Mis Proyectos</h1></div>
+        <div class="about-info-cont">
+          <div class="about-info-cont-des">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
+            dolorum ipsa tempore omnis? Voluptas eos distinctio sequi itaque
+            consectetur hic aperiam aspernatur ab nam facilis. Corporis
+            doloremque dicta optio quos.
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="section-contact" id="section-contact">
+      <div class="waves waves-up"></div>
+      <div class="waves waves-down"></div>
+      <div class="waves waves-middle"></div>
+      <article class="aritcle-contact">
+        <div class="about-title"><h1>Contáctame</h1></div>
+        <div class="about-info-cont">
+          <div class="about-info-cont-des">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
+            dolorum ipsa tempore omnis? Voluptas eos distinctio sequi itaque
+            consectetur hic aperiam aspernatur ab nam facilis. Corporis
+            doloremque dicta optio quos.
+          </div>
+        </div>
+      </article>
     </section>
     <!-- BOOTSTRAP -->
     <!-- <script
