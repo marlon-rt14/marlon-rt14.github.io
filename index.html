@@ -7,8 +7,8 @@
     <title>Portfolio - Marlon Ruiz</title>
 
     <!-- STYLES -->
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <link rel="stylesheet" href="./public/css/normalize.css" />
 
     <!-- BOOTSTRAP -->
     <!-- <link
@@ -38,24 +38,24 @@
         <div class="container-brand">
           <a class="container-brand__a" href="/"
             ><h1>Portf</h1>
-            <span>olio.</span></a
+            <span id="brand-span">olio.</span></a
           >
         </div>
         <ul class="nav__ul">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#header">Inicio</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#section-about">Acerca de</a>
+          <li class="nav-item ni-4">
+            <a class="nav-link-1" href="#section-about">Acerca de</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#section-skills">Habilidades</a>
+          <li class="nav-item ni-1">
+            <a class="nav-link-2" href="#section-skills">Habilidades</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#section-projects">Proyectos</a>
+          <li class="nav-item ni-3">
+            <a class="nav-link-3" href="#section-projects">Proyectos</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#section-contact">Contacto</a>
+          <li class="nav-item ni-4">
+            <a class="nav-link-4" href="#section-contact">Contacto</a>
           </li>
         </ul>
       </nav>
@@ -65,7 +65,7 @@
           <h2>Marlon Javier Ruiz</h2>
           <p>y soy <span class="key-text"></span></p>
           <div class="form-footer">
-            <button>Contáctame</button>
+            <button class="button">Contáctame</button>
           </div>
         </form>
       </div>
@@ -75,12 +75,12 @@
       <div class="waves waves-down"></div>
       <div class="waves waves-middle"></div>
       <article class="aritcle-about">
-        <div class="about-title"><h1>Acerca de mí</h1></div>
-        <div class="about-info-cont">
-          <div class="about-info-cont-img">
-            <img src="public/img/marlon-01.jpg" alt="profile-photo" />
+        <div class="article-title about-title"><h1>Acerca de mí</h1></div>
+        <div class="article-cont about-cont">
+          <div class="article-cont-img about-cont-img">
+            <img src="./public/img/marlon-01.jpg" alt="profile-photo" />
           </div>
-          <div class="about-info-cont-des">
+          <div class="article-des about-des">
             <!-- <h4>Soy Marlon y soy un <span class="key-text"></span></h4> -->
             <p>
               <strong>Desarrollador backend</strong> y especializándome en el
@@ -92,8 +92,12 @@
               a <strong>aprender nuevas tecnologias</strong> y nunca perder la
               oportunidad de ganar nuevos conocimientos.
             </p>
-
-            <a href="">Descargar CV</a>
+            <a
+              href="./dist/CVI-Marlon-s.pdf"
+              target="_blank"
+              class="button-cv button"
+              >Descargar CV</a
+            >
           </div>
         </div>
       </article>
@@ -104,16 +108,16 @@
       <div class="waves waves-down"></div>
       <div class="waves waves-middle"></div>
       <article class="aritcle-skills">
-        <div class="about-title"><h1>Mis Habilidades</h1></div>
-        <div class="about-info-cont">
-          <div class="about-info-cont-des">
+        <div class="article-title skills-title"><h1>Mis Habilidades</h1></div>
+        <div class="article-cont skills-cont">
+          <div class="article-des skills-des">
             <p>
               Mi experiencia en el maquetado con HTML Y CSS, así como el manejo
               del DOM con JavaScript es bastante extensa ya que he desarrollado
               varios proyectos personales. La creación de aplicaciones de
               escritorio, manejo de Bases de datos, creacion de servicios
               RESTfull y SOAP, y el manejo de Java Ant, .NET (C#), NodeJS son mi
-              mayor fortaleza. <br /><br><i
+              mayor fortaleza. <br /><br /><i
                 >He desarrollado proyectos con mas tecnologías de las
                 mencionadas, pero no son tan frecuentes.</i
               >
@@ -198,6 +202,13 @@
               </div>
               <div class="grid-item">
                 <img
+                  src="./public/img/neovim.svg"
+                  alt="neovim-logo"
+                  class="grid-img"
+                />
+              </div>
+              <div class="grid-item">
+                <img
                   src="./public/img/nodejs.svg"
                   alt="nodejs-logo"
                   class="grid-img"
@@ -276,6 +287,7 @@
       crossorigin="anonymous"
     ></script> -->
 
-    <script src="./main.js"></script>
+    <script src="./public/js/effects.js"></script>
+    <script src="./public/js/events.js"></script>
   </body>
 </html>

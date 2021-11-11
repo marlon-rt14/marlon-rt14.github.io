@@ -1,3 +1,4 @@
+
 const spans = document.querySelectorAll(".key-text");
 // const span = document.querySelector(".key-text");
 const skills = ["Developer. ", "Designer. ", "Freelancer. "];
@@ -102,10 +103,3 @@ async function empezar(word = skills[0], cont = 0) {
 }
 
 empezar();
-
-// function iniciar() {
-//   empezar(skills[0], 0, spans[0]);
-//   empezar(skills[0], 0, spans[1]);
-// }
-
-// iniciar();
