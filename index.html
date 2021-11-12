@@ -6,17 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Marlon Ruiz</title>
 
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <!-- STYLES -->
     <link rel="stylesheet" href="./public/css/main.css" />
     <link rel="stylesheet" href="./public/css/normalize.css" />
-
-    <!-- BOOTSTRAP -->
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    /> -->
 
     <!-- FONTS -->
     <link
@@ -31,6 +30,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"
+    />
   </head>
   <body>
     <header class="header" id="header">
@@ -38,24 +43,24 @@
         <div class="container-brand">
           <a class="container-brand__a" href="/"
             ><h1>Portf</h1>
-            <span id="brand-span">olio.</span></a
+            <span id="brand-span" class="">olio.</span></a
           >
         </div>
         <ul class="nav__ul">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#header">Inicio</a>
           </li>
-          <li class="nav-item ni-4">
-            <a class="nav-link-1" href="#section-about">Acerca de</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-about">Acerca de</a>
           </li>
-          <li class="nav-item ni-1">
-            <a class="nav-link-2" href="#section-skills">Habilidades</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-skills">Habilidades</a>
           </li>
-          <li class="nav-item ni-3">
-            <a class="nav-link-3" href="#section-projects">Proyectos</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-projects">Proyectos</a>
           </li>
-          <li class="nav-item ni-4">
-            <a class="nav-link-4" href="#section-contact">Contacto</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-contact">Contacto</a>
           </li>
         </ul>
       </nav>
@@ -253,13 +258,168 @@
       <div class="waves waves-down"></div>
       <div class="waves waves-middle"></div>
       <article class="aritcle-projects">
-        <div class="about-title"><h1>Mis Proyectos</h1></div>
-        <div class="about-info-cont">
-          <div class="about-info-cont-des">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
-            dolorum ipsa tempore omnis? Voluptas eos distinctio sequi itaque
-            consectetur hic aperiam aspernatur ab nam facilis. Corporis
-            doloremque dicta optio quos.
+        <div class="article-title projects-title"><h1>Mis Proyectos</h1></div>
+        <div class="article-cont projects-cont">
+          <div class="article-des projects-des">
+            <p>
+              Puedes visitar
+              <a href="https://github.com/marlon-rt14" class="profile-github"
+                >mi perfil</a
+              >
+              de GitHub para conocer todos mis repositorios...
+            </p>
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="carousel-card">
+                    <div class="carousel-card-header">
+                      <h1>٬٬</h1>
+                    </div>
+                    <div class="carousel-card-body">
+                      <p>
+                        Este proyecto es una plantilla sobre comida del mar. Es
+                        una página estática. No requiere de recursos externos.
+                      </p>
+                    </div>
+                    <div class="carousel-card-footer">
+                      <div class="card-footer-cont">
+                        <div class="card-img-cont">
+                          <img
+                            src="./public/img/projects/seafood1.jpg"
+                            alt="ejemplo"
+                          />
+                        </div>
+                        <div>
+                          <a href="https://demo-seafood.netlify.app/"
+                            ><h4>Seafood Template</h4></a
+                          >
+                        </div>
+                        <div>
+                          <a
+                            href="https://github.com/marlon-rt14/food-template-the-sea"
+                            ><i
+                              class="bi-github"
+                              role="img"
+                              aria-label="GitHub"
+                            ></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-card">
+                    <div class="carousel-card-header">
+                      <h1>٬٬</h1>
+                    </div>
+                    <div class="carousel-card-body">
+                      <p>
+                        Este proyecto usa recursos publicos de internet y es
+                        posible que algunas funciones no se muestren
+                        correctamente. Para usar recursos locales visite el
+                        repositorio para obtener más información.
+                      </p>
+                    </div>
+                    <div class="carousel-card-footer">
+                      <div class="card-footer-cont">
+                        <div class="card-img-cont">
+                          <img src="./public/img/marlon-01.jpg" alt="ejemplo" />
+                        </div>
+                        <div><h4>Titulo</h4></div>
+                        <div>
+                          <i
+                            class="bi-github"
+                            role="img"
+                            aria-label="GitHub"
+                          ></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-card">
+                    <div class="carousel-card-header">
+                      <h1>٬٬</h1>
+                    </div>
+                    <div class="carousel-card-body">
+                      <p>
+                        Este proyecto usa recursos publicos de internet y es
+                        posible que algunas funciones no se muestren
+                        correctamente. Para usar recursos locales visite el
+                        repositorio para obtener más información.
+                      </p>
+                    </div>
+                    <div class="carousel-card-footer">
+                      <div class="card-footer-cont">
+                        <div class="card-img-cont">
+                          <img src="./public/img/marlon-01.jpg" alt="ejemplo" />
+                        </div>
+                        <div><h4>Titulo</h4></div>
+                        <div>
+                          <i
+                            class="bi-github"
+                            role="img"
+                            aria-label="GitHub"
+                          ></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
         </div>
       </article>
@@ -269,23 +429,23 @@
       <div class="waves waves-down"></div>
       <div class="waves waves-middle"></div>
       <article class="aritcle-contact">
-        <div class="about-title"><h1>Contáctame</h1></div>
-        <div class="about-info-cont">
-          <div class="about-info-cont-des">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
-            dolorum ipsa tempore omnis? Voluptas eos distinctio sequi itaque
-            consectetur hic aperiam aspernatur ab nam facilis. Corporis
-            doloremque dicta optio quos.
+        <div class="article-title contact-title"><h1>Contáctame</h1></div>
+        <div class="article-cont contact-cont">
+          <div class="article-des contact-des">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+            velit aliquam! Unde dolorum, blanditiis non mollitia quisquam
+            molestias? Sunt a facilis enim fugiat sed exercitationem culpa.
+            Corporis autem assumenda dolore?
           </div>
         </div>
       </article>
     </section>
     <!-- BOOTSTRAP -->
-    <!-- <script
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
-    ></script> -->
+    ></script>
 
     <script src="./public/js/effects.js"></script>
     <script src="./public/js/events.js"></script>
