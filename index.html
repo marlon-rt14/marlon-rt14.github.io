@@ -36,6 +36,17 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"
     />
+
+    <script src="https://kit.fontawesome.com/e9e06328f7.js" crossorigin="anonymous"></script>
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_rmA46PTCEfap4CuoeQoTI');
+        })();
+    </script>
   </head>
   <body>
     <header class="header" id="header">
@@ -424,6 +435,7 @@
         </div>
       </article>
     </section>
+    
     <section class="section-contact" id="section-contact">
       <div class="waves waves-up"></div>
       <div class="waves waves-down"></div>
@@ -432,10 +444,68 @@
         <div class="article-title contact-title"><h1>Contáctame</h1></div>
         <div class="article-cont contact-cont">
           <div class="article-des contact-des">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
-            velit aliquam! Unde dolorum, blanditiis non mollitia quisquam
-            molestias? Sunt a facilis enim fugiat sed exercitationem culpa.
-            Corporis autem assumenda dolore?
+            <div class="contact-des-quickly">
+              <h4>Get in touch </h4>
+              <!-- <p>You can contact me here quicly o use my IG.</p> -->
+              <ul class="contact__ul">
+                <li class="contact__ul__li">
+                  <div class="contact-icon-cont">
+                    <i class="bi bi-person-fill key-icon"></i>
+                  </div>
+                  <div class="contact__li-des">
+                    <h5>Name</h5>
+                    <p>Marlon Ruiz</p>
+                  </div>
+                </li>
+                <li class="contact__ul__li">
+                  <div class="contact-icon-cont">
+                    <i class="fas fa-map-marker-alt key-icon"></i>
+                  </div>
+                  <div class="contact__li-des">
+                    <h5>Address</h5>
+                    <p>Ibarra - Ecuador</p>
+                  </div>
+                </li>
+                <li class="contact__ul__li">
+                  <div class="contact-icon-cont">
+                    <i class="fas fa-envelope key-icon"></i>
+                  </div>
+                  <div class="contact__li-des">
+                    <h5>E-mail</h5>
+                    <p>mjavierrt14@gmail.com</p>
+                  </div>
+                </li>
+                <li class="contact__ul__li">
+                  <div class="contact-icon-cont">
+                    <i class="fas fa-phone-alt key-icon"></i>
+                  </div>
+                  <div class="contact__li-des">
+                    <h5>Phone</h5>
+                    <p>+593 992623321</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="contact-des-form">
+              <h4>Send me a message</h4>
+              <form action="" class="contact-form" id="contact-form">
+                <input type="hidden" name="contact_number">
+                <div class="mb-3">
+                  <input type="text" placeholder="Name" name="user_name">
+                </div>
+                <div class="mb-3">
+                  <input type="email" placeholder="E-mail" name="user_email">
+                </div>
+                <div class="mb-3">
+                  <textarea name="message" placeholder="Message"></textarea>
+                </div>
+                <div class="">
+                  <input type="submit" class="send-email" value="Send">
+                  <!-- <button class="send-email">Send</button> -->
+                </div>
+                <!-- <p>Se usara el E-mail/correo registrado en su navegador</p> -->
+              </form>
+            </div>
           </div>
         </div>
       </article>
@@ -449,5 +519,6 @@
 
     <script src="./public/js/effects.js"></script>
     <script src="./public/js/events.js"></script>
+    <script src="./public/js/forms.js"></script>
   </body>
 </html>
