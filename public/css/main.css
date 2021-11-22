@@ -68,6 +68,10 @@ html{
 	display: none;
 }
 
+/* .container-brand {
+	border: 2px solid blue;
+} */
+
 .container-brand__a {
   font-family: "Ubuntu", cursive;
 	font-weight: 700;
@@ -97,6 +101,7 @@ html{
   justify-content: space-evenly;
   align-items: center;
 	height: 100%;
+	margin: 0;
 	/* border: 2px solid green; */
 }
 

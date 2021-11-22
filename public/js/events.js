@@ -75,7 +75,7 @@ const verifyScroll = () => {
   } else {
     nav.style.background = gradientBox;
     nav.style.position = "fixed";
-    nav.style.paddingTop = ".2rem";
+    nav.style.paddingTop = "0rem";
     brandSpan.style.background = bgTransparent;
     brandSpan.style.webkitTextFillColor = "#fff";
     removeItemsHover();
@@ -92,8 +92,8 @@ const verifyMobileResponsive = () => {
     brandSpan.style.fontSize = "1.1em";
   } else {
     // para desktop
-    brandH1.style.fontSize = "1.2em";
-    brandSpan.style.fontSize = "1.2em";
+    brandH1.style.fontSize = "1em";
+    brandSpan.style.fontSize = "1em";
   }
 };
 
