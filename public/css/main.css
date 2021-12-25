@@ -305,6 +305,7 @@ article {
 	max-height: 300px;
 	/* max-width: 300px; */
 	min-width: 300px;
+	display: none;
 }
 
 .about-cont-img img {
