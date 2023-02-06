@@ -12,7 +12,7 @@ const itemRes = document.querySelectorAll(".item-res");
 
 const brandH1 = document.getElementById("brand-h1");
 
-const iconMenu = document.getElementById('icon-menu');
+const iconMenu = document.getElementById("icon-menu");
 
 const bgTransparent = "transparent";
 const gradientText = "var(--gradien-color-text)";
@@ -56,32 +56,36 @@ function addItemsHover() {
 navResButton.addEventListener("click", () => {
   flag = !flag;
   navUlCont.style.left = flag ? 0 : "-100vw";
+  if (window.scrollY > 0) {
+    nav.style.paddingTop = "1.5rem";
+  }
   verifyFlag();
 });
 
 const verifyScroll = () => {
   if (window.scrollY === 0) {
-    nav.style.background = bgTransparent;
+    nav.style.background = flag ? "var(--sub-primary-color)" : bgTransparent;
     nav.style.position = "static";
     nav.style.paddingTop = "1.5rem";
     addItemsHover();
     navUlCont.style.top = "calc(2em + 1em + 2rem)";
-    navUlCont.style.height = "calc((100vh) - (2em + 1.2em + 2rem))";
+    navUlCont.style.height = "calc((100vh) - (.1.5rem))";
     verifyMobileResponsive();
-    brandSpan.style.background = gradientText;
-    brandSpan.style.webkitTextFillColor = bgTransparent;
+    brandSpan.style.background = flag ? "transparent" : gradientText;
+    brandSpan.style.webkitTextFillColor = flag ? "white" : bgTransparent;
     brandSpan.style.backgroundClip = "text";
     brandSpan.style.webkitBackgroundClip = "text";
   } else {
-    nav.style.background = gradientBox;
+    //   nav.style.background = gradientBox;
+    nav.style.background = flag ? "var(--sub-primary-color)" : "var(--section-color)";
     nav.style.position = "fixed";
-    nav.style.paddingTop = "0rem";
-    brandSpan.style.background = bgTransparent;
-    brandSpan.style.webkitTextFillColor = "#fff";
-    removeItemsHover();
-    navUlCont.style.top = "calc(1.4em + 2rem)";
-    navUlCont.style.height = "calc((100vh) - (1.4em + 2rem))";
-    verifyMobileResponsive();
+    nav.style.paddingTop = flag ? "1.5rem" : "0rem";
+    // brandSpan.style.background = bgTransparent;
+    // brandSpan.style.webkitTextFillColor = "#fff";
+    // removeItemsHover();
+    // navUlCont.style.top = "calc(1.4em + 2rem)";
+    // navUlCont.style.height = "calc((100vh) - (1.4em + 2rem))";
+    // verifyMobileResponsive();
   }
 };
 
@@ -102,21 +106,36 @@ const verifyFlag = () => {
     nav.style.background = "var(--sub-primary-color)";
     brandSpan.style.background = bgTransparent;
     brandSpan.style.webkitTextFillColor = "#fff";
-    iconMenu.classList.remove('fa-bars');
-    iconMenu.classList.add('fa-times');
+    iconMenu.classList.remove("fa-bars");
+    iconMenu.classList.add("fa-times");
   } else {
-    iconMenu.classList.remove('fa-times');
-    iconMenu.classList.add('fa-bars');
+    iconMenu.classList.remove("fa-times");
+    iconMenu.classList.add("fa-bars");
     verifyScroll();
   }
 };
 
-for (const item of itemRes) {
+itemRes.forEach((item, ind) => {
   item.addEventListener("click", () => {
+    console.log(item);
+    console.log(window.scrollY);
     flag = !flag;
     navUlCont.style.left = flag ? 0 : "-100vw";
-    iconMenu.classList.toggle('fa-bars');
-    iconMenu.classList.toggle('fa-times');
+    iconMenu.classList.toggle("fa-bars");
+    iconMenu.classList.toggle("fa-times");
+    switch (ind) {
+      case 0:
+        window.scrollTo({ top: 0 });
+        break;
+      case 1:
+        window.scrollTo({ top: 390 });
+        break;
+
+      default:
+        break;
+    }
     verifyFlag();
   });
-}
+});
+
+window.addEventListener("scroll", () => verifyScroll());
