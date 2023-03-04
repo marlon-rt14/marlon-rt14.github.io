@@ -1,4 +1,5 @@
 words = ["Freelancer", "Web developer", "Backend develper", "Data science learner"];
+// words = ["Data science learner", "Data science learner", "Data science learner", "Data science learner"];
 
 let i = 1;
 type_text = document.querySelector(".key-text");
