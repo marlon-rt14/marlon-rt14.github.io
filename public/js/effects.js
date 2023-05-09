@@ -1,4 +1,4 @@
-words = ["Freelancer", "Web developer", "Backend develper", "Data science learner"];
+words = ["Freelancer", "Web developer", "Backend developer", "Data science learner"];
 // words = ["Data science learner", "Data science learner", "Data science learner", "Data science learner"];
 
 let i = 1;
