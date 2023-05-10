@@ -14,13 +14,29 @@
   --sub-secondary-color: #ff0000;
   --sub2-secondary-color: #ff1b1b;
 
-  --gradien-color-text: -webkit-linear-gradient(30deg, var(--primary-color) 0%, var(--secondary-color) 74%);
+  --gradien-color-text: -webkit-linear-gradient(
+    30deg,
+    var(--primary-color) 0%,
+    var(--secondary-color) 74%
+  );
 
-  --sub-gradien-color-text: -webkit-linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 74%);
+  --sub-gradien-color-text: -webkit-linear-gradient(
+    90deg,
+    var(--primary-color) 0%,
+    var(--secondary-color) 74%
+  );
 
-  --gradient-color-box: linear-gradient(30deg, var(--primary-color) 0%, var(--secondary-color) 74%);
+  --gradient-color-box: linear-gradient(
+    30deg,
+    var(--primary-color) 0%,
+    var(--secondary-color) 74%
+  );
 
-  --sub-gradient-color-box: linear-gradient(30deg, var(--sub2-primary-color) 0%, var(--sub2-secondary-color) 74%);
+  --sub-gradient-color-box: linear-gradient(
+    30deg,
+    var(--sub2-primary-color) 0%,
+    var(--sub2-secondary-color) 74%
+  );
 }
 
 .key-text,
@@ -36,14 +52,14 @@
 }
 
 .key-text {
-    /* position: absolute; */
-    display: inline-block;
-    border-right: 3px solid var(--secondary-color);
-    /* animation: typing 2s steps(20, end) infinite alternate, blink .20s infinite step-end alternate; */
-    animation: blink 0.5s infinite step-end alternate;
-    white-space: nowrap;
-    width: 10ex;
-    overflow: hidden;
+  /* position: absolute; */
+  display: inline-block;
+  border-right: 3px solid var(--secondary-color);
+  /* animation: typing 2s steps(20, end) infinite alternate, blink .20s infinite step-end alternate; */
+  animation: blink 0.5s infinite step-end alternate;
+  white-space: nowrap;
+  width: 10ex;
+  overflow: hidden;
 }
 
 html {
@@ -166,9 +182,9 @@ html {
 }
 
 .header__form p {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .form-footer {
@@ -484,7 +500,7 @@ article {
 }
 
 .card-footer-cont * {
-    transition: color .3s;
+  transition: color 0.3s;
 }
 
 .card-footer-cont div {
@@ -746,7 +762,7 @@ article {
     width: 100%;
   }
 
-  .nav-item-res p {
+  .nav-item-res a {
     display: block;
     width: 100%;
     padding: 0.7rem;
@@ -754,7 +770,7 @@ article {
     cursor: pointer;
   }
 
-  .nav-item-res p:hover {
+  .nav-item-res a:hover {
     background: var(--sub-gradient-color-box);
   }
 
